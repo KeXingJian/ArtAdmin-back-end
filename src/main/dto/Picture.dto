@@ -1,0 +1,12 @@
+export com.kxj.artadmin.model.Picture
+    ->package com.kxj.artadmin.model.dto
+
+
+MirrorPictureView{
+    id
+    path
+}
+input AddPictureInput{
+    path
+    type
+}

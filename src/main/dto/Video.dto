@@ -1,0 +1,61 @@
+export com.kxj.artadmin.model.Video
+    ->package com.kxj.artadmin.model.dto
+UserVideoView{
+      #allScalars
+      -id
+      -status
+      artist{
+        name
+      }
+      picture{
+        path
+      }
+      dictionaries{
+        description
+      }
+}
+
+AdminVideoView{
+    #allScalars
+    artist{
+        id
+        name
+    }
+    picture{
+        id
+        path
+    }
+  dictionaries{
+     id
+     description
+
+  }
+}
+
+input EditVideoInput{
+    uuid
+    description
+    artist{
+        id
+    }
+    picture{
+        id
+        path
+        type
+    }
+    dictionaries{
+        id
+    }
+
+}
+
+input StatusVideoInput{
+    uuid
+    status
+    artist{
+        name
+    }
+    picture{
+        id
+    }
+}

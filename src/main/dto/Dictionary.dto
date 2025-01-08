@@ -1,0 +1,18 @@
+export com.kxj.artadmin.model.Dictionary
+    ->package com.kxj.artadmin.model.dto
+
+DictionaryView{
+    #allScalars
+    parent{
+        id
+    }
+}
+
+DictionaryTreeView{
+    id
+    description
+    childDictionaries{
+        id
+        description
+    }
+}

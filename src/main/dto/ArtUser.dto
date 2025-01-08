@@ -1,0 +1,92 @@
+export com.kxj.artadmin.model.ArtUser
+    ->package com.kxj.artadmin.model.dto
+
+DetailUserView{
+    id
+    account
+    password
+    role{
+        name
+    }
+    stop
+}
+
+input LoginUserInput{
+    account
+    password
+}
+
+input RegisterUserInput{
+    name
+    account
+    password
+}
+input UpdateUserInput{
+    account
+    name
+    picture{
+        id
+        path
+    }
+}
+
+UserInfoView{
+    id
+    name
+    picture{
+        id
+        path
+        type
+    }
+    collections{
+        id
+        name
+        videos{
+            uuid
+            description
+            artist{
+                name
+            }
+            picture{
+                path
+            }
+        }
+    }
+}
+
+SimpleUserInfoView{
+    picture{
+       path
+    }
+}
+
+AdminUserView{
+    id
+    picture{
+        path
+    }
+    name
+    account
+    role{
+        name
+    }
+    status
+    stop
+}
+
+UserCollectionSelectView{
+    collections{
+        id
+        name
+    }
+}
+
+input AddUserCollectionInput{
+    account
+    collections{
+        id
+        videos{
+            uuid
+        }
+    }
+}

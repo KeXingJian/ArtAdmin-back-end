@@ -1,0 +1,37 @@
+jimmer:
+  dialect: org.babyfish.jimmer.sql.dialect.MySqlDialect
+  show-sql: true
+  pretty-sql: true
+  database-validation-mode: ERROR
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/art_admin
+    username: root
+    password: 2787901285q
+  threads:
+    virtual:
+      enabled: true
+  mvc:
+    async:
+      request-timeout: 120m
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+upload:
+  picture-recycle: D:\warehouse\Recycle\pictureRecycle\
+  audit-area: D:\warehouse\unstructuredData\video\auditArea\
+  work-area: D:\warehouse\unstructuredData\video\workArea\
+  video-recycle: D:\warehouse\Recycle\videoRecycle\
+  pass-area: D:\warehouse\unstructuredData\video\passArea\
+  picture-dir: D:\warehouse\unstructuredData\picture\
+
+logging:
+  level:
+    root: warn
+register:
+  token: $2a$10$oAviUU2aAhrHEF

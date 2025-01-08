@@ -1,0 +1,74 @@
+export com.kxj.artadmin.model.Collection
+    ->package com.kxj.artadmin.model.dto
+
+input AdminCollectionInput{
+      id
+      name
+      common
+      picture{
+        id
+        path
+        type
+      }
+}
+
+input VideoCollectionInput{
+      id
+      videos{
+        uuid
+      }
+}
+
+input UserCollectionInput{
+    id
+    name
+    common
+    artUser{
+        account
+    }
+}
+
+
+AdminCollectionView{
+    id
+    name
+    picture{
+        id
+        path
+    }
+    videos{
+        uuid
+        picture{
+           path
+        }
+    }
+}
+
+PublicCollectionView{
+    name
+    picture{
+        path
+    }
+    videos{
+           uuid
+           description
+           picture{
+               path
+           }
+           artist{
+             name
+           }
+           dictionaries{
+               description
+           }
+       }
+}
+
+SimpleCollection{
+    id
+    artUser{
+        id
+    }
+}
+
+

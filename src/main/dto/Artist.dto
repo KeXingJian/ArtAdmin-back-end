@@ -1,0 +1,64 @@
+export com.kxj.artadmin.model.Artist
+    ->package com.kxj.artadmin.model.dto
+
+ArtistView{
+    id
+    name
+    description
+    picture{
+        id
+        path
+    }
+}
+ArtistSelectView{
+    id
+    name
+}
+
+AtistCollectionView{
+    id
+    name
+    description
+    picture{
+        path
+    }
+    videos{
+        uuid
+        description
+        status
+        picture{
+            path
+        }
+        artist{
+          name
+        }
+        dictionaries{
+            description
+        }
+    }
+}
+
+input ArtistAddInput{
+    name
+    description
+    picture{
+        path
+        type
+    }
+}
+
+input ArtistUpadteInput{
+    id
+    name
+    description
+    picture{
+        id
+        path
+        type
+    }
+}
+
+
+
+
+
