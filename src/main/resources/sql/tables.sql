@@ -155,5 +155,8 @@ create table video_collection_mapping
         foreign key (video_id) references video (id)
 );
 
+insert into picture(id,path,type) VALUE (1,'default.png','A');
+insert into role (id , name) VALUES (1,'root'),(2,'admin' ),(3,'user');
+insert into art_user (name,account,password,role_id,picture_id,stop) VALUE ('root','123456','{bcrypt}$2a$10$Q/qaJ0Snhr1K3lQK8q7v1.HarJhIgbBITpkqKvbo1isOIj8f0oyy6',1,1,0);
 
 

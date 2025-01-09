@@ -10,7 +10,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/art_admin
     username: root
-    password: 2787901285q
+    password: 123456
   threads:
     virtual:
       enabled: true
@@ -23,12 +23,12 @@ spring:
       max-request-size: 20MB
 
 upload:
-  picture-recycle: D:\warehouse\Recycle\pictureRecycle\
-  audit-area: D:\warehouse\unstructuredData\video\auditArea\
-  work-area: D:\warehouse\unstructuredData\video\workArea\
-  video-recycle: D:\warehouse\Recycle\videoRecycle\
-  pass-area: D:\warehouse\unstructuredData\video\passArea\
-  picture-dir: D:\warehouse\unstructuredData\picture\
+  picture-recycle: D:\warehouse\Recycle\pictureRecycle\  #图片回收
+  audit-area: D:\warehouse\unstructuredData\video\auditArea\ #视频审核分类
+  work-area: D:\warehouse\unstructuredData\video\workArea\  #视频资源等候区
+  video-recycle: D:\warehouse\Recycle\videoRecycle\   #不通过的视频
+  pass-area: D:\warehouse\unstructuredData\video\passArea\  #通过的视频
+  picture-dir: D:\warehouse\unstructuredData\picture\   #图片存放
 
 logging:
   level:
